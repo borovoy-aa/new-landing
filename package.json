@@ -1,0 +1,23 @@
+{
+  "name": "itdvn-landing",
+  "version": "1.0.0",
+  "description": "This is landing tutorial ITVDN",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^4.0.0-alpha.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/borovoy-aa/new-landing.git"
+  },
+  "author": "Artem Borovoy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/borovoy-aa/new-landing/issues"
+  },
+  "homepage": "https://github.com/borovoy-aa/new-landing#readme"
+}
