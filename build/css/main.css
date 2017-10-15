@@ -1,0 +1,85 @@
+body {
+  height: 100vh;
+  background-color: #000000; }
+
+header {
+  position: fixed;
+  width: 100%;
+  background-color: transparent;
+  height: 70px; }
+
+.header-sub {
+  height: 79px;
+  width: 100%; }
+
+.header-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 20px; }
+  .header-block .header-btn {
+    border: none;
+    background: none;
+    outline: none; }
+
+.section-home .home-content {
+  border-bottom: 1px solid #151515; }
+  .section-home .home-content img {
+    -webkit-transform: translateX(-35%);
+    -ms-transform: translateX(-35%);
+    transform: translateX(-35%);
+    position: relative;
+    bottom: -2px; }
+  .section-home .home-content h1 {
+    font-size: 82px;
+    color: #ffffff;
+    font-weight: bold; }
+  .section-home .home-content .main-btn {
+    margin-top: 30px;
+    float: right;
+    border: none;
+    outline: none;
+    background-color: #0f33ff;
+    width: 90px;
+    height: 30px;
+    padding-left: 55px;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    -webkit-transition: All 0.5s ease;
+    -o-transition: All 0.5s ease;
+    transition: All 0.5s ease; }
+    .section-home .home-content .main-btn:hover {
+      width: 120px;
+      padding-left: 80px; }
+    .section-home .home-content .main-btn p {
+      position: absolute;
+      left: 13px; }
+    .section-home .home-content .main-btn i {
+      font-size: 22px; }
+
+.section-home .home-info {
+  margin-top: 30px; }
+  .section-home .home-info .info-block {
+    padding: 0 0 0 20px;
+    color: #252525; }
+    .section-home .home-info .info-block:hover {
+      color: #ffffff;
+      cursor: pointer; }
+    .section-home .home-info .info-block h5 {
+      font-weight: bold;
+      font-size: 18px;
+      text-transform: uppercase; }
+    .section-home .home-info .info-block p {
+      font-size: 16px; }

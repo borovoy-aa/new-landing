@@ -1,11 +1,41 @@
 extends ../layouts/page.pug
 
 block title
-    title New-landing
+  title New-landing
 
 block content
-    section.section-heading
+  section.section-home
+    .container-fluid
+      .row
+        .col-md-3
+          .sidebar
+        .col-md-9
+          .home-content
+            .row
+              .col-md-6
+                h1 Your next interactive experience
+                .col-md-3
+                  button.main-btn
+                    p hire us
+                    i.fa.fa-long-arrow-right(aria-hidden='true')
+              .col-md-6
+                img(src="../images/home-img.png", alt="")
+          .home-info
+            .row
+              .col-md-4
+                .info-block
+                  h5 Metiew & Smith
+                  p Lorem ipsum dolor sit amet consectetur adipisicing elit. A, et?
+              .col-md-4
+                .info-block
+                  h5 Fantasy interactive
+                  p Lorem ipsum dolor sit amet consectetur adipisicing elit. At, rerum!
+              .col-md-4
+                .info-block
+                  h5 Paul & shark
+                  p Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, a!
+
         
-    section.section-content
+  section.section-content
         
 block scripts
