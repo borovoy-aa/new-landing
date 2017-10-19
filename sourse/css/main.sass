@@ -1,20 +1,27 @@
 body
-  height: 100vh
+  height: 100%
+.fp-tableCell
+  vertical-align: baseline !important
+section
   background-color: #000000
-
 header 
   position: fixed
-  width: 100%
-  background-color: transparent
   height: 70px
+  display: block
+  width: 100%
+  background: #000
+  z-index: 9
+  text-align: center
+  color: #f2f2f2
+  padding: 20px
+  top: 0
 .header-sub
-  height: 79px
+  height: 70px
   width: 100%
 .header-block
   display: flex
   flex-direction: row
   justify-content: space-between
-  padding: 20px
   
   .header-btn
     border: none
@@ -22,6 +29,7 @@ header
     outline: none
 
 .section-home
+  height: 87vh
   .home-content
     border-bottom: 1px solid #151515
     img
@@ -70,3 +78,69 @@ header
       p
         font-size: 16px
 
+.sidebar
+  height: 87vh
+  position: fixed
+  margin-left: 60px
+  width: 100px
+  left: 0
+  top: 8%
+  &::before
+    content: ""
+    position: absolute
+    top: 50%
+    left: 0
+    -webkit-transform: translateY(-50%)
+    transform: translateY(-50%)
+    width: 2px
+    height: 90%
+    max-height: 750px
+    background-color: #555
+    opacity: .35
+    z-index: 10
+.side-list
+  height: 100%
+  display: flex
+  flex-direction: column
+  justify-content: space-around
+  padding: 14px
+  margin: 0
+  a
+    color: #ffffff
+    text-decoration: none
+.side-list span
+  opacity: 0
+  visibility: hidden
+  cursor: pointer
+.side-list li:nth-child(1)::before
+  content: "01"
+.side-list li:nth-child(2)::before
+  content: "02"
+.side-list li:nth-child(3)::before
+  content: "03"
+.side-list li:nth-child(4)::before
+  content: "04"
+.side-list li:nth-child(5)::before
+  content: "05"
+.side-list > li::before
+  cursor: pointer
+  position: absolute
+  left: 10px
+  color: #555
+  font-size: 14px
+  font-weight: 300
+  visibility: visible
+
+.side-list li.is-active
+  color: #0f33ff
+  transition: color .4s ease-in-out
+  &::before
+    left: -33px
+    color: #fff
+.side-list li.is-active span
+  visibility: visible
+  opacity: 1
+  transition: opacity .4s ease-in-out
+
+.section-works
+  height: 87vh

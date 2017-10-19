@@ -9,13 +9,19 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/media.css">
+    <link rel="stylesheet" href="../css/jquery.fullpage.min.css">
+    <link rel="stylesheet" href="../css/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owlcarousel/owl.theme.default.min.css">
     <script src="../js/jquery-3.2.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/owlcarousel/owl.carousel.min.js"></script>
+    <script src="../js/jquery.fullpage.min.js"></script>
     <script src="../js/common.js"></script>
+    <script src="../js/side-list.js"></script>
   </head>
   <body>
-    <header>
-      <div class="container-fluid">
+    <header class="header" id="header">
+      <div class="container">
         <div class="header-block">
           <div class="header-logo"><img src="../images/header-logo.png" alt="logo"></div>
           <div class="header-menu">
@@ -25,53 +31,79 @@
       </div>
     </header>
     <div class="header-sub"></div>
-    <section class="section-home">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-3">
-            <div class="sidebar"></div>
-          </div>
-          <div class="col-md-9">
-            <div class="home-content">
-              <div class="row">
-                <div class="col-md-6">
-                  <h1>Your next interactive experience</h1>
-                  <div class="col-md-3">
-                    <button class="main-btn">
-                      <p>hire us</p><i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="col-md-6"><img src="../images/home-img.png" alt=""></div>
+    <div id="fullpage">
+      <section class="section active section-home">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="sidebar" id="left-sidebar">
+                <ul class="side-list" id="menu">
+                  <li class="list-tab is-active"><a href="#firstPage"> <span>Home</span></a></li>
+                  <li class="list-tab"><a href="#secondPage"> <span>Works</span></a></li>
+                  <li class="list-tab"><a href="#"> <span>About</span></a></li>
+                  <li class="list-tab"><a href="#"> <span>Contact</span></a></li>
+                  <li class="list-tab"><a href="#"> <span>Hire us</span></a></li>
+                </ul>
               </div>
             </div>
-            <div class="home-info">
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="info-block">
-                    <h5>Metiew & Smith</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, et?</p>
+            <div class="col-md-9">
+              <div class="home-content">
+                <div class="row">
+                  <div class="col-md-6">
+                    <h1>Your next interactive experience</h1>
+                    <div class="col-md-3">
+                      <button class="main-btn">
+                        <p>hire us</p><i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                      </button>
+                    </div>
                   </div>
+                  <div class="col-md-6"><img src="../images/home-img.png" alt=""></div>
                 </div>
-                <div class="col-md-4">
-                  <div class="info-block">
-                    <h5>Fantasy interactive</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, rerum!</p>
+              </div>
+              <div class="home-info">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="info-block">
+                      <h5>Metiew & Smith</h5>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, et?</p>
+                    </div>
                   </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="info-block">
-                    <h5>Paul & shark</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, a!</p>
+                  <div class="col-md-4">
+                    <div class="info-block">
+                      <h5>Fantasy interactive</h5>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, rerum!</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="info-block">
+                      <h5>Paul & shark</h5>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, a!</p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="section-content"></section>
+      </section>
+      <section class="section section-works">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-9 col-md-offset-3">
+              <div class="owl-carousel owl-theme">
+                <div> Your Content </div>
+                <div> Your Content </div>
+                <div> Your Content </div>
+                <div> Your Content </div>
+                <div> Your Content </div>
+                <div> Your Content </div>
+                <div> Your Content </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
     <script src="http://qoo.by/counter.js"></script>
   </body>
 </html>
